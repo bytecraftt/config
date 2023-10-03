@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(INCLUDES 
     ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/json/include
     ${CMAKE_CURRENT_SOURCE_DIR}/trace/include)
 
 set(SOURCES
