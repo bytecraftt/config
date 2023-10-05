@@ -22,5 +22,12 @@ int main(int argc, char **argv)
 
     config.Read();
 
+
+    std::cout << config.Get({"user", "age"}) << std::endl;
+
+    config.Set({"user", "age"}, 5);
+
+    std::cout << config.Get({"user", "age"}) << std::endl;
+
     return 0;
 }
