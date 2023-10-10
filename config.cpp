@@ -19,15 +19,11 @@ int main(int argc, char **argv)
     };
 
     config.Write(data);
-
     config.Read();
 
     std::cout << config.Get({"user", "age"}) << std::endl;
-
     config.Set({"user", "age"}, 5);
-
     std::cout << config.Get({"user", "age"}) << std::endl;
-
     config.Add<std::vector<int>>({"user", "count"}, {5,6,3});
 
     return 0;
